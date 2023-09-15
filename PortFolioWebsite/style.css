@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --text-color: #000000;
+    --main-color: #83b735;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    z-index: 100;
+    display :flex;
+    align-items:center;
+    justify-content: space-between ;
+    padding: 18px 100px;
+    background: #edecea;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.navbar{
+    position: relative;
+    display: flex;
+}
+.navbar{
+    font-size: 1rem;
+    padding: 15px 10%;
+    font-weight: 500;
+    color: var(--text-color); 
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    padding: 8px 18px;
+    transition: all .32s ease-in;
+    color: var(--text-color);
+}
+.navbar a:hover{
+    color: grey;
+}
+.home{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background-image: url(images/backgroundimage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.home-text h1{
+    font-size: 2.5rem;
+}
+.home-text p{
+    font-size: 0.938rem;
+    margin: 0.4rem 0 1.8rem;
+    color: white;
+}
+.home-text span{
+    color: white;
+}
+.text{
+    color: white;
+    font-size: 40px;
+}
+.btn{
+    padding: 10px 14px;
+    background: white;
+    color: black;
+    border-radius: 0.3rem;
+    font-size: 18px;
+}
+.btn:hover{
+    background: #fff;
+    color: #000000;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 100vh;
+    padding-top: 200px;
+}
+.about-img img{
+    width: 75%;
+    border-radius: 20px;
+    object-fit: contain;
+    padding-left: 100px;
+    padding-bottom: 25%;
+}
+.about-text span{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 700;
+    align-content: center;
+    text-transform: uppercase;
+}
+.about-text p{
+   width: 82%;
+   margin-bottom: 30px;
+   padding-right: 10px;
+}
+.heading-contact span{
+    color:var(--text-color);
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 0.1px;
+}
+.contact{
+    display: flex;
+    background: black;
+    color: white;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    border-radius: 25px;
+    left: 500px;
+    right: 500px;
+}
+.full-contact{
+    padding-bottom: 100px;
+}
+.contact form{
+    position: relative;
+    padding-left: 50%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    justify-content: center;  
+}
+form .txt-field{
+    position: relative;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+}
+.txt-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+.txt-field label{
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+input[type="submit"]{
+    width:100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    background: #fff;
+    color: #000000;
+}
+.resume{
+    color:var(--text-color);
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 0.1px;
+}
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background: black;
+    color: white;
+    padding: 100px 15%;
+    display: flex;
+    justify-content: center;
+}
+.footer div{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+.footer div:a{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer span{
+    color: white;
+    padding-left: 87px;
+}
+.footer p{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.footer i{
+    color: white;
+}
